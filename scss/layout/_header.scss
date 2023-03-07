@@ -1,0 +1,10 @@
+.top-images{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    img{
+        width: 25%;
+        height: 60px;
+        border: 1.5px solid $main-color;
+    }
+}

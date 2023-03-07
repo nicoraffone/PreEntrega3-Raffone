@@ -1,0 +1,44 @@
+.menu-text{
+    div{
+        background-color: rgba(0, 0, 0, 0.452);
+        margin-top: 30px;
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+    }
+    h2{
+        color: white;
+        font-size: 12px;
+        margin-left: 5px;
+        text-decoration: underline;
+    }
+    ul{
+        margin-left: 20px;
+        font-size: 8.5px;
+        color: white;
+        text-decoration: underline;
+        li{
+            line-height: 20px;
+        }
+    }
+    nav{
+        background-color: rgba(148, 148, 148, 0.568);
+        ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            font-size: 11px;
+            display: flex;
+            a{
+                text-decoration: none;
+            }
+            li{
+                color: white;
+                &:hover{
+                    font-size: 13px;
+                    color: #ffc8b4;
+                }
+            }
+        }
+    }
+
+}
