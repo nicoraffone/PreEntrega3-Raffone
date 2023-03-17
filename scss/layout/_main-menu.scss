@@ -23,11 +23,9 @@
     nav{
         background-color: rgba(148, 148, 148, 0.568);
         ul{
-            display: flex;
-            justify-content: space-around;
+            @include flex(row, space-around, center);
             list-style: none;
             font-size: 11px;
-            display: flex;
             a{
                 text-decoration: none;
             }

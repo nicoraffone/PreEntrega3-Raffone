@@ -1,6 +1,5 @@
 .top-images{
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, space-between, center);
     width: 100%;
     img{
         width: 25%;

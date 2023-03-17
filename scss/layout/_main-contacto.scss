@@ -33,14 +33,15 @@
         font-size: 14px;
     }
     form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, flex-start, center);
         input{
             margin: 5px;
+            font-family: "Poopins";
         }
         textarea{
             margin: 5px;
+            font-family: "Poopins";
+            font-size: 14.8px;
         }
         .boton{
             background-color: $main-color;

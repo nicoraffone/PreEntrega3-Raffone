@@ -3,13 +3,12 @@
     /* header */
 
 .top-images{
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, space-between, normal);
     width: 100%;
     img{
         width: 25%;
         height: 180px;
-        border: 2px solid #d48568b9;
+        border: 2px solid $main-color;
     }
 }
 
@@ -21,12 +20,10 @@
 
     .navbar{
         div{
-            display: flex;
-            justify-content: space-evenly;
-            background-color: #d48568b9;
+            @include flex(row, space-evenly, center);
+            background-color: $main-color;
             border-bottom: 6px solid black;
             height: 50px;
-            align-items: center;
             a{
                 text-decoration: none;
                 color: white;
@@ -38,3 +35,22 @@
         }
     }
 }
+
+    /* footer */
+
+    footer{
+        height: 100px;
+        margin-top: 30px;
+        @include flex(row, space-evenly, center);
+        background-color: $main-color;
+        img{
+            width: 35px;
+            height: 35px;
+            margin: 0 40px;
+        }
+        ul{
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+    }

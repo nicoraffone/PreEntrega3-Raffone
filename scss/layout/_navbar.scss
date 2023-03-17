@@ -1,7 +1,6 @@
 .navbar{
     div{
-        display: flex;
-        justify-content: space-evenly;
+        @include flex(row, space-evenly, normal);
         background-color: $main-color;
         border-bottom: 4px solid black;
         a{

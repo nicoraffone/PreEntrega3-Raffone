@@ -13,7 +13,9 @@ body {
 
 .top-images {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%; }
   .top-images img {
     width: 25%;
@@ -22,7 +24,9 @@ body {
 
 .navbar div {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: normal;
   background-color: #d48568b9;
   border-bottom: 4px solid black; }
   .navbar div a {
@@ -54,12 +58,15 @@ body {
 
 .section-2 {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: normal; }
   .section-2 div {
     width: 100%;
     background-color: rgba(112, 112, 112, 0.5);
     margin-top: 60px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center; }
     .section-2 div img {
@@ -88,6 +95,8 @@ body {
     margin-top: 50px;
     background-color: rgba(112, 112, 112, 0.5);
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center; }
     .section-3 div img {
       width: 90px;
@@ -131,10 +140,11 @@ body {
   background-color: rgba(148, 148, 148, 0.568); }
   .menu-text nav ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
-    font-size: 11px;
-    display: flex; }
+    font-size: 11px; }
     .menu-text nav ul a {
       text-decoration: none; }
     .menu-text nav ul li {
@@ -220,11 +230,15 @@ body {
 .section-form form {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center; }
   .section-form form input {
-    margin: 5px; }
+    margin: 5px;
+    font-family: "Poopins"; }
   .section-form form textarea {
-    margin: 5px; }
+    margin: 5px;
+    font-family: "Poopins";
+    font-size: 14.8px; }
   .section-form form .boton {
     background-color: #d48568b9;
     color: white;
@@ -241,22 +255,26 @@ footer {
   height: 50px;
   margin-top: 30px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  background-color: #d48568b9;
-  align-items: center; }
+  align-items: center;
+  background-color: #d48568b9; }
   footer img {
     width: 20px;
     height: 20px;
     margin: 10px; }
   footer ul {
-    font-size: 7px;
+    font-size: 11px;
+    font-weight: bold;
     margin-left: 20px; }
 
 @media (min-width: 425px) {
   /* header */
   .top-images {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: normal;
     width: 100%; }
     .top-images img {
       width: 25%;
@@ -266,12 +284,15 @@ footer {
 /* main-index */
 .section-2 {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: normal; }
   .section-2 div {
     width: 100%;
     background-color: rgba(112, 112, 112, 0.5);
     margin-top: 60px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center; }
     .section-2 div img {
@@ -300,6 +321,7 @@ footer {
     margin-top: 50px;
     background-color: rgba(112, 112, 112, 0.5);
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center; }
     .section-3 div img {
@@ -324,7 +346,9 @@ footer {
   /* header */
   .top-images {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: normal;
     width: 100%; }
     .top-images img {
       width: 25%;
@@ -333,7 +357,9 @@ footer {
   /* navbar */
   .navbar div {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: normal;
     background-color: #d48568b9;
     border-bottom: 6px solid black; }
     .navbar div a {
@@ -346,10 +372,11 @@ footer {
   /* main-index */
   .section-1 {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     margin-top: 20px;
-    width: 100%;
-    align-items: center; }
+    width: 100%; }
     .section-1 h1 {
       font-size: 16px;
       color: #ececec;
@@ -367,12 +394,15 @@ footer {
         transform: scale(1.1); }
   .section-2 {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: normal; }
     .section-2 div {
       width: 100%;
       background-color: rgba(112, 112, 112, 0.5);
       margin-top: 80px;
       display: flex;
+      flex-direction: row;
       justify-content: space-around;
       align-items: center; }
       .section-2 div img {
@@ -403,6 +433,7 @@ footer {
       margin-top: 70px;
       background-color: rgba(112, 112, 112, 0.5);
       display: flex;
+      flex-direction: row;
       justify-content: space-evenly;
       align-items: center; }
       .section-3 div img {
@@ -446,10 +477,11 @@ footer {
     background-color: rgba(148, 148, 148, 0.568); }
     .menu-text nav ul {
       display: flex;
+      flex-direction: row;
       justify-content: space-around;
+      align-items: normal;
       list-style: none;
-      font-size: 16px;
-      display: flex; }
+      font-size: 16px; }
       .menu-text nav ul a {
         text-decoration: none; }
       .menu-text nav ul li {
@@ -536,6 +568,7 @@ footer {
     .section-form form {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       align-items: center; }
       .section-form form input {
         margin: 9px; }
@@ -556,22 +589,26 @@ footer {
     height: 70px;
     margin-top: 30px;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    background-color: #d48568b9;
-    align-items: center; }
+    align-items: center;
+    background-color: #d48568b9; }
     footer img {
       width: 30px;
       height: 30px;
       margin: 20px; }
     footer ul {
-      font-size: 10px;
+      font-size: 13px;
+      font-weight: bold;
       margin-left: 20px; } }
 
 @media (min-width: 1024px) {
   /* header */
   .top-images {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: normal;
     width: 100%; }
     .top-images img {
       width: 25%;
@@ -580,11 +617,12 @@ footer {
   /* navbar */
   .navbar div {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #d48568b9;
     border-bottom: 6px solid black;
-    height: 40px;
-    align-items: center; }
+    height: 40px; }
     .navbar div a {
       text-decoration: none;
       color: white;
@@ -594,10 +632,11 @@ footer {
   /* main-index */
   .section-1 {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     margin-top: 60px;
-    width: 100%;
-    align-items: center; }
+    width: 100%; }
     .section-1 h1 {
       font-size: 22px;
       color: #ececec;
@@ -614,12 +653,15 @@ footer {
     width: 50%;
     display: flex;
     flex-direction: column;
-    border-right: 5px double #d485689d; }
+    justify-content: flex-start;
+    align-items: normal;
+    border-right: 5px double #d48568b9; }
     .section-2 div {
       width: 100%;
       background-color: rgba(112, 112, 112, 0.5);
       margin-top: 80px;
       display: flex;
+      flex-direction: row;
       justify-content: space-around;
       align-items: center; }
       .section-2 div img {
@@ -647,6 +689,7 @@ footer {
       margin-top: 70px;
       background-color: rgba(112, 112, 112, 0.5);
       display: flex;
+      flex-direction: row;
       justify-content: space-around;
       align-items: center; }
       .section-3 div img {
@@ -668,8 +711,10 @@ footer {
       margin-top: 80px; }
   .main-desktop {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    border-top: 10px double #d485689d; }
+    align-items: normal;
+    border-top: 10px double #d48568b9; }
   /* main-menu */
   .menu-text div {
     background-color: rgba(0, 0, 0, 0.452);
@@ -695,11 +740,12 @@ footer {
     .menu-text nav ul {
       margin-top: 30px;
       display: flex;
+      flex-direction: row;
       justify-content: space-around;
+      align-items: center;
       list-style: none;
       font-size: 19px;
-      height: 40px;
-      align-items: center; }
+      height: 40px; }
       .menu-text nav ul a {
         text-decoration: none; }
       .menu-text nav ul li {
@@ -779,6 +825,7 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    align-items: normal;
     margin: 6%; }
     .section-form h2 {
       font-size: 19px; }
@@ -791,13 +838,14 @@ footer {
     .section-form form {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       align-items: center; }
       .section-form form input {
         margin: 12px; }
       .section-form form textarea {
         margin: 5px; }
       .section-form form .boton {
-        background-color: #d48568;
+        background-color: #d48568b9;
         color: white;
         height: 27px;
         width: 80px;
@@ -812,22 +860,26 @@ footer {
     height: 90px;
     margin-top: 30px;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    background-color: #d48568e3;
-    align-items: center; }
+    align-items: center;
+    background-color: #d48568b9; }
     footer img {
       width: 30px;
       height: 30px;
       margin: 0 40px; }
     footer ul {
-      font-size: 12px;
+      font-size: 14px;
+      font-weight: bold;
       margin-left: 20px; } }
 
 @media (min-width: 1440px) {
   /* header */
   .top-images {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: normal;
     width: 100%; }
     .top-images img {
       width: 25%;
@@ -838,14 +890,33 @@ footer {
   /* navbar */
   .navbar div {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     background-color: #d48568b9;
     border-bottom: 6px solid black;
-    height: 50px;
-    align-items: center; }
+    height: 50px; }
     .navbar div a {
       text-decoration: none;
       color: white;
       font-size: 22px; }
       .navbar div a:hover {
         text-decoration: underline; } }
+
+/* footer */
+footer {
+  height: 100px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #d48568b9; }
+  footer img {
+    width: 35px;
+    height: 35px;
+    margin: 0 40px; }
+  footer ul {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px; }

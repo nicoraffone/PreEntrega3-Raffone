@@ -21,15 +21,12 @@
 }
 
 .section-2{
-    display: flex;
-    flex-direction: column;
+    @include flex(column, flex-start, normal);
     div{
         width: 100%;
         background-color: rgba(112, 112, 112, 0.5);
         margin-top: 60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(row, space-between, center);
         img{
             border-radius: 50%;
             width: 90px;
@@ -62,8 +59,7 @@
     div{
         margin-top: 50px;
         background-color: rgba(112, 112, 112, 0.5);
-        display: flex;
-        align-items: center;
+        @include flex(row, flex-start, center);
         img{
             width: 90px;
             height: 90px;

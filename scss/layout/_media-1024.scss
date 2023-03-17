@@ -3,13 +3,12 @@
     /* header */
 
 .top-images{
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, space-between, normal);
     width: 100%;
     img{
         width: 25%;
         height: 150px;
-        border: 3px solid #d48568b9;
+        border: 3px solid $main-color;
     }
 }
 
@@ -17,12 +16,10 @@
 
     .navbar{
         div{
-            display: flex;
-            justify-content: space-evenly;
-            background-color: #d48568b9;
+            @include flex(row, space-evenly, center);
+            background-color: $main-color;
             border-bottom: 6px solid black;
             height: 40px;
-            align-items: center;
             a{
                 text-decoration: none;
                 color: white;
@@ -37,11 +34,9 @@
     /* main-index */
 
 .section-1{
-    display: flex;
-    justify-content: space-around;
+    @include flex(row, space-around, center);
     margin-top: 60px;
     width: 100%;
-    align-items: center;
     h1{
         font-size: 22px;
         color: rgb(236, 236, 236);
@@ -60,16 +55,13 @@
 
     .section-2{
         width: 50%;
-        display: flex;
-        flex-direction: column;
-        border-right: 5px double #d485689d;
+        @include flex(column, flex-start, normal);
+        border-right: 5px double $main-color;
     div{
             width: 100%;
             background-color: rgba(112, 112, 112, 0.5);
             margin-top: 80px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            @include flex(row, space-around, center);
         img{
             border-radius: 50%;
             width: 130px;
@@ -102,9 +94,7 @@
     div{
         margin-top: 70px;
         background-color: rgba(112, 112, 112, 0.5);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(row, space-around, center);
         img{
             width: 130px;
             height: 130px;
@@ -129,9 +119,8 @@
 }
 
 .main-desktop{
-    display: flex;
-    justify-content: space-around;
-    border-top: 10px double #d485689d;
+    @include flex(row, space-around, normal);
+    border-top: 10px double $main-color;
 }
 
     /* main-menu */
@@ -164,12 +153,10 @@
         background-color: rgba(148, 148, 148, 0.568);
         ul{
             margin-top: 30px;
-            display: flex;
-            justify-content: space-around;
+            @include flex(row, space-around, center);
             list-style: none;
             font-size: 19px;
             height: 40px;
-            align-items: center;
             a{
                 text-decoration: none;
             }
@@ -276,9 +263,7 @@
     }
     
     .section-form{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
+        @include flex(row-reverse, space-around, normal);
         margin: 6%;
         h2{
             font-size: 19px;
@@ -292,9 +277,7 @@
             font-size: 18px;
         }
         form{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(column, flex-start, center);
             input{
                 margin: 12px;
             }
@@ -302,7 +285,7 @@
                 margin: 5px;
             }
             .boton{
-                background-color: #d48568;
+                background-color: $main-color;
                 color: white;
                 height: 27px;
                 width: 80px;
@@ -323,17 +306,16 @@
 footer{
     height: 90px;
     margin-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #d48568e3;
-    align-items: center;
+    @include flex(row, space-evenly, center);
+    background-color: $main-color;
     img{
         width: 30px;
         height: 30px;
         margin: 0 40px;
     }
     ul{
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: bold;
         margin-left: 20px;
     }
 }
