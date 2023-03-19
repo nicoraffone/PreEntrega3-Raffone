@@ -298,21 +298,23 @@
 
     /* footer */
 
-footer{
-    height: 70px;
-    margin-top: 30px;
-    @include flex(row, space-evenly, center);
-    background-color: $main-color;
-    img{
-        width: 30px;
-        height: 30px;
-        margin: 20px;
+    footer{
+        height: 90px;
+        margin-top: 30px;
+        @include flex(row, space-around, center);
+        background-color: $main-color;
+        a{
+            img{
+            width: 30px;
+            height: 30px;
+            margin: 15px;
+            }
+        }
+        ul{
+            li{
+                font-size: 13px;
+                font-weight: bold;
+            }
+        }
     }
-    ul{
-        font-size: 13px;
-        font-weight: bold;
-        margin-left: 20px;
-    }
-}
-
 }

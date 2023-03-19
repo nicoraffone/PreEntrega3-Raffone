@@ -34,23 +34,26 @@
             }
         }
     }
-}
 
     /* footer */
 
     footer{
-        height: 100px;
+        height: 130px;
         margin-top: 30px;
-        @include flex(row, space-evenly, center);
+        @include flex(row, space-around, center);
         background-color: $main-color;
-        img{
-            width: 35px;
-            height: 35px;
-            margin: 0 40px;
+        a{
+            img{
+            width: 37px;
+            height: 37px;
+            margin: 25px;
+            }
         }
         ul{
-            font-size: 16px;
-            font-weight: bold;
-            margin-left: 20px;
+            li{
+                font-size: 17px;
+                font-weight: bold;
+            }
         }
     }
+}
